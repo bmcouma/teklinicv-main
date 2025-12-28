@@ -12,7 +12,7 @@ from teklinicv.schema.sample_generator import (
 )
 
 
-class TestCreateSampleRendercvPydanticModel:
+class TestCreateSampleTeklinicvPydanticModel:
     @pytest.mark.parametrize(
         "theme",
         available_themes,

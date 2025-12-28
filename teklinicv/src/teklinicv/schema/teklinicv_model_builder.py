@@ -13,7 +13,7 @@ from .pydantic_error_handling import parse_validation_errors
 from .yaml_reader import read_yaml
 
 
-class BuildRendercvModelArguments(TypedDict, total=False):
+class BuildTeklinicvModelArguments(TypedDict, total=False):
     design_file_path_or_contents: pathlib.Path | str | None
     locale_file_path_or_contents: pathlib.Path | str | None
     settings_file_path_or_contents: pathlib.Path | str | None
@@ -32,7 +32,7 @@ class BuildRendercvModelArguments(TypedDict, total=False):
 
 def build_teklinicv_dictionary(
     main_input_file_path_or_contents: pathlib.Path | str,
-    **kwargs: Unpack[BuildRendercvModelArguments],
+    **kwargs: Unpack[BuildTeklinicvModelArguments],
 ) -> CommentedMap:
     """Merge main YAML with overlays and CLI overrides into final dictionary.
 
@@ -147,7 +147,7 @@ def build_teklinicv_model_from_commented_map(
 
 def build_teklinicv_dictionary_and_model(
     main_input_file_path_or_contents: pathlib.Path | str,
-    **kwargs: Unpack[BuildRendercvModelArguments],
+    **kwargs: Unpack[BuildTeklinicvModelArguments],
 ) -> tuple[CommentedMap, TekliniCVModel]:
     """Complete pipeline from raw input to validated model.
 

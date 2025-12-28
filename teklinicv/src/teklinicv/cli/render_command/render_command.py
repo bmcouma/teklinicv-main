@@ -4,7 +4,7 @@ from typing import Annotated
 import typer
 
 from teklinicv.schema.teklinicv_model_builder import (
-    BuildRendercvModelArguments,
+    BuildTeklinicvModelArguments,
 )
 
 from ..app import app
@@ -186,7 +186,7 @@ def cli_command_render(
     ] = None,
     extra_data_model_override_arguments: typer.Context = None,  # ty: ignore[invalid-parameter-default]
 ):
-    arguments: BuildRendercvModelArguments = {
+    arguments: BuildTeklinicvModelArguments = {
         "design_file_path_or_contents": design if design else None,
         "locale_file_path_or_contents": locale if locale else None,
         "settings_file_path_or_contents": settings if settings else None,

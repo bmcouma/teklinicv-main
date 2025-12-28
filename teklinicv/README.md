@@ -1,5 +1,9 @@
 # TekliniCV
 
+[![PyPI version](https://badge.fury.io/py/teklinicv.svg)](https://badge.fury.io/py/teklinicv)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Formatted with Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
 CV/Resume Generator by Teklini Technologies.
 
 Transform structured CV input into professional PDFs with clean typography.
@@ -35,4 +39,4 @@ cv:
       - "This is a placeholder summary."
 ```
 
-Powered by Teklini Technolog
+Powered by Teklini Technologies

@@ -1076,96 +1076,6 @@ wheels = [
 ]
 
 [[package]]
-name = "rendercv"
-version = "2.6"
-source = { editable = "." }
-dependencies = [
-    { name = "jinja2" },
-    { name = "markdown" },
-    { name = "phonenumbers" },
-    { name = "pydantic", extra = ["email"] },
-    { name = "pydantic-extra-types" },
-    { name = "ruamel-yaml" },
-]
-
-[package.optional-dependencies]
-full = [
-    { name = "packaging" },
-    { name = "rendercv-fonts" },
-    { name = "typer" },
-    { name = "typst" },
-    { name = "watchdog" },
-]
-
-[package.dev-dependencies]
-create-executable = [
-    { name = "pyinstaller" },
-]
-dev = [
-    { name = "black" },
-    { name = "prek" },
-    { name = "pytest" },
-    { name = "pytest-cov" },
-    { name = "pytest-xdist" },
-    { name = "ruff" },
-    { name = "ty" },
-]
-docs = [
-    { name = "markdown-callouts" },
-    { name = "mkdocs-gen-files" },
-    { name = "mkdocs-literate-nav" },
-    { name = "mkdocs-macros-plugin" },
-    { name = "mkdocs-material" },
-    { name = "mkdocstrings", extra = ["python"] },
-]
-update-entry-figures = [
-    { name = "pdfcropmargins" },
-    { name = "pillow" },
-    { name = "pymupdf" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "jinja2", specifier = ">=3.1.6" },
-    { name = "markdown", specifier = ">=3.10" },
-    { name = "packaging", marker = "extra == 'full'", specifier = ">=25.0" },
-    { name = "phonenumbers", specifier = ">=9.0.19" },
-    { name = "pydantic", extras = ["email"], specifier = ">=2.10.6" },
-    { name = "pydantic-extra-types", specifier = ">=2.10.6" },
-    { name = "rendercv-fonts", marker = "extra == 'full'", specifier = ">=0.5.1" },
-    { name = "ruamel-yaml", specifier = ">=0.18.10" },
-    { name = "typer", marker = "extra == 'full'", specifier = ">=0.20.0" },
-    { name = "typst", marker = "extra == 'full'", specifier = ">=0.14.4" },
-    { name = "watchdog", marker = "extra == 'full'", specifier = ">=6.0.0" },
-]
-provides-extras = ["full"]
-
-[package.metadata.requires-dev]
-create-executable = [{ name = "pyinstaller", specifier = ">=6.17.0" }]
-dev = [
-    { name = "black", specifier = ">=25.12.0" },
-    { name = "prek", specifier = ">=0.2.23" },
-    { name = "pytest", specifier = ">=9.0.2" },
-    { name = "pytest-cov", specifier = ">=7.0.0" },
-    { name = "pytest-xdist", specifier = ">=3.8.0" },
-    { name = "ruff", specifier = ">=0.14.10" },
-    { name = "ty", specifier = ">=0.0.5" },
-]
-docs = [
-    { name = "markdown-callouts", specifier = ">=0.4.0" },
-    { name = "mkdocs-gen-files", specifier = ">=0.6.0" },
-    { name = "mkdocs-literate-nav", specifier = ">=0.6.2" },
-    { name = "mkdocs-macros-plugin", specifier = ">=1.5.0" },
-    { name = "mkdocs-material", specifier = ">=9.7.0" },
-    { name = "mkdocstrings", extras = ["python"], specifier = ">=1.0.0" },
-]
-update-entry-figures = [
-    { name = "pdfcropmargins", specifier = "==2.2.1" },
-    { name = "pillow", specifier = "==10.4.0" },
-    { name = "pymupdf", specifier = "==1.26.5" },
-]
-
-[[package]]
 name = "rendercv-fonts"
 version = "0.5.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1315,6 +1225,96 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/e0/de/a0c3d1244912c260638f0f925e190e493ccea37ecaea9bbad7c14413b803/super_collections-0.6.2.tar.gz", hash = "sha256:0c8d8abacd9fad2c7c1c715f036c29f5db213f8cac65f24d45ecba12b4da187a", size = 31315, upload-time = "2025-09-30T00:37:08.067Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/17/43/47c7cf84b3bd74a8631b02d47db356656bb8dff6f2e61a4c749963814d0d/super_collections-0.6.2-py3-none-any.whl", hash = "sha256:291b74d26299e9051d69ad9d89e61b07b6646f86a57a2f5ab3063d206eee9c56", size = 16173, upload-time = "2025-09-30T00:37:07.104Z" },
+]
+
+[[package]]
+name = "teklinicv"
+version = "2.6"
+source = { editable = "." }
+dependencies = [
+    { name = "jinja2" },
+    { name = "markdown" },
+    { name = "phonenumbers" },
+    { name = "pydantic", extra = ["email"] },
+    { name = "pydantic-extra-types" },
+    { name = "ruamel-yaml" },
+]
+
+[package.optional-dependencies]
+full = [
+    { name = "packaging" },
+    { name = "rendercv-fonts" },
+    { name = "typer" },
+    { name = "typst" },
+    { name = "watchdog" },
+]
+
+[package.dev-dependencies]
+create-executable = [
+    { name = "pyinstaller" },
+]
+dev = [
+    { name = "black" },
+    { name = "prek" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "pytest-xdist" },
+    { name = "ruff" },
+    { name = "ty" },
+]
+docs = [
+    { name = "markdown-callouts" },
+    { name = "mkdocs-gen-files" },
+    { name = "mkdocs-literate-nav" },
+    { name = "mkdocs-macros-plugin" },
+    { name = "mkdocs-material" },
+    { name = "mkdocstrings", extra = ["python"] },
+]
+update-entry-figures = [
+    { name = "pdfcropmargins" },
+    { name = "pillow" },
+    { name = "pymupdf" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "jinja2", specifier = ">=3.1.6" },
+    { name = "markdown", specifier = ">=3.10" },
+    { name = "packaging", marker = "extra == 'full'", specifier = ">=25.0" },
+    { name = "phonenumbers", specifier = ">=9.0.19" },
+    { name = "pydantic", extras = ["email"], specifier = ">=2.10.6" },
+    { name = "pydantic-extra-types", specifier = ">=2.10.6" },
+    { name = "rendercv-fonts", marker = "extra == 'full'", specifier = ">=0.5.1" },
+    { name = "ruamel-yaml", specifier = ">=0.18.10" },
+    { name = "typer", marker = "extra == 'full'", specifier = ">=0.20.0" },
+    { name = "typst", marker = "extra == 'full'", specifier = ">=0.14.4" },
+    { name = "watchdog", marker = "extra == 'full'", specifier = ">=6.0.0" },
+]
+provides-extras = ["full"]
+
+[package.metadata.requires-dev]
+create-executable = [{ name = "pyinstaller", specifier = ">=6.17.0" }]
+dev = [
+    { name = "black", specifier = ">=25.12.0" },
+    { name = "prek", specifier = ">=0.2.23" },
+    { name = "pytest", specifier = ">=9.0.2" },
+    { name = "pytest-cov", specifier = ">=7.0.0" },
+    { name = "pytest-xdist", specifier = ">=3.8.0" },
+    { name = "ruff", specifier = ">=0.14.10" },
+    { name = "ty", specifier = ">=0.0.5" },
+]
+docs = [
+    { name = "markdown-callouts", specifier = ">=0.4.0" },
+    { name = "mkdocs-gen-files", specifier = ">=0.6.0" },
+    { name = "mkdocs-literate-nav", specifier = ">=0.6.2" },
+    { name = "mkdocs-macros-plugin", specifier = ">=1.5.0" },
+    { name = "mkdocs-material", specifier = ">=9.7.0" },
+    { name = "mkdocstrings", extras = ["python"], specifier = ">=1.0.0" },
+]
+update-entry-figures = [
+    { name = "pdfcropmargins", specifier = "==2.2.1" },
+    { name = "pillow", specifier = "==10.4.0" },
+    { name = "pymupdf", specifier = "==1.26.5" },
 ]
 
 [[package]]

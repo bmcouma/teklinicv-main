@@ -78,7 +78,7 @@ class TestTimedStep:
         assert result == 6
 
 
-class TestRunRendercv:
+class TestRunTeklinicv:
     def test_invalid_yaml(self, tmp_path):
         invalid_yaml = tmp_path / "invalid.yaml"
         invalid_yaml.write_text("invalid: yaml: content: :", encoding="utf-8")

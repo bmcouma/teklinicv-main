@@ -108,7 +108,7 @@ def escape_typst_characters(string: str) -> str:
             typst_command_pattern.finditer(string),
         )
     ):
-        dummy_name = f"RENDERCVTYPSTCOMMANDORMATH{i}"
+        dummy_name = f"TEKLINICVTYPSTCOMMANDORMATH{i}"
         typst_command_mapping[dummy_name] = match.group(0)
         string = string.replace(typst_command_mapping[dummy_name], dummy_name)
         typst_command_mapping[dummy_name] = typst_command_mapping[dummy_name].replace(

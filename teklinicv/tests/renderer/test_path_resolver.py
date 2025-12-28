@@ -9,7 +9,7 @@ from teklinicv.schema.models.teklinicv_model import TekliniCVModel
 from teklinicv.schema.models.settings.settings import Settings
 
 
-class TestResolveRendercvFilePath:
+class TestResolveTeklinicvFilePath:
     @pytest.mark.parametrize(
         ("file_path_template", "cv_name", "current_date", "expected_filename"),
         [

@@ -36,7 +36,7 @@ def create_yaml_file_fixture(tmp_path):
     return create_file
 
 
-class TestBuildRendercvDictionary:
+class TestBuildTeklinicvDictionary:
     @pytest.mark.parametrize(
         "input_type",
         ["string", "file"],
@@ -261,7 +261,7 @@ class TestBuildRendercvDictionary:
         assert result["cv"]["name"] == "John Doe"
 
 
-class TestBuildRendercvModelFromDictionary:
+class TestBuildTeklinicvModelFromDictionary:
     def test_basic_model_creation_without_optionals(self, minimal_input_dict):
         model = build_teklinicv_model_from_commented_map(minimal_input_dict)
 
@@ -319,7 +319,7 @@ class TestBuildRendercvModelFromDictionary:
         assert model._input_file_path == input_file_path
 
 
-class TestBuildRendercvModel:
+class TestBuildTeklinicvModel:
     @pytest.mark.parametrize(
         "input_type",
         ["string", "file"],

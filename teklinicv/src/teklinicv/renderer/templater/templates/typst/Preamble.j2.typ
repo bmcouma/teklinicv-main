@@ -1,8 +1,8 @@
-// Import the rendercv function and all the refactored components
-#import "@preview/rendercv:0.1.0": *
+// Import the teklinicv function and all the refactored components
+#import "@preview/teklinicv:0.1.0": *
 
-// Apply the rendercv template with custom configuration
-#show: rendercv.with(
+// Apply the teklinicv template with custom configuration
+#show: teklinicv.with(
   name: "{{ cv.plain_name }}",
   footer: {{ cv.footer }},
   top-note: [ {{ cv.top_note }} ],

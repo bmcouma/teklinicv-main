@@ -12,7 +12,7 @@ from teklinicv.renderer.markdown import generate_markdown
 from teklinicv.renderer.pdf_png import generate_pdf, generate_png
 from teklinicv.renderer.typst import generate_typst
 from teklinicv.schema.teklinicv_model_builder import (
-    BuildRendercvModelArguments,
+    BuildTeklinicvModelArguments,
     build_teklinicv_dictionary_and_model,
 )
 
@@ -74,7 +74,7 @@ def timed_step[T, **P](
 def run_teklinicv(
     main_input_file_path_or_contents: pathlib.Path | str,
     progress: ProgressPanel,
-    **kwargs: Unpack[BuildRendercvModelArguments],
+    **kwargs: Unpack[BuildTeklinicvModelArguments],
 ):
     """Execute complete CV generation pipeline with progress tracking and error handling.
 
