@@ -1,0 +1,7 @@
+# API Reference
+
+TekliniCV is a CLI application, not a library. Its internal API is not guaranteed to be stable and may change without notice. However, for those who wish to use TekliniCV programmatically in Python scripts, the complete API reference is provided here.
+
+::: teklinicv
+    options:
+        heading_level: 2
