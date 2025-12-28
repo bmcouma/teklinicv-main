@@ -35,4 +35,4 @@ cv:
       - "This is a placeholder summary."
 ```
 
-Powered by Teklini Technolog
+Powered by Teklini Technologies
